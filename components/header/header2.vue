@@ -17,7 +17,7 @@
             </div>
             <div class="brand-logo layout2-logo">
               <a href="#">
-                <img :src='"../../assets/images/custom/logo/logo.png"' class="img-fluid" style="height:50px;" alt>
+                <img :src='"../../assets/images/custom/logo/logo.png"' class="img-fluid" style="height:100px;" alt>
               </a>
             </div>
             <div class="menu-right pull-right">

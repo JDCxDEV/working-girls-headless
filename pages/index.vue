@@ -1,15 +1,15 @@
 <template>
   <div>
-    <Fashion />
+    <Flower />
   </div>
 </template>
 
 <script>
-const Fashion = () => import('./shop/furniture');
+const Flower = () => import('./shop/flower');
 import { mapGetters } from 'vuex';
 export default {
   components: {
-    Fashion
+    Flower
   },
   computed: {
     ...mapGetters({

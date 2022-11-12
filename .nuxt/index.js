@@ -13,9 +13,9 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_bootstrapvue_24b5757e from 'nuxt_plugin_bootstrapvue_24b5757e' // Source: .\\bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_vuescrollto_b0f71692 from 'nuxt_plugin_vuescrollto_b0f71692' // Source: .\\vue-scrollto.js (mode: 'client')
-import nuxt_plugin_axios_27e59912 from 'nuxt_plugin_axios_27e59912' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_0bed855c from 'nuxt_plugin_bootstrapvue_0bed855c' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_vuescrollto_f1137588 from 'nuxt_plugin_vuescrollto_f1137588' // Source: .\\vue-scrollto.js (mode: 'client')
+import nuxt_plugin_axios_75b1242d from 'nuxt_plugin_axios_75b1242d' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_plugin_03b7832e from 'nuxt_plugin_plugin_03b7832e' // Source: ..\\plugins\\plugin.js (mode: 'client')
 import nuxt_plugin_localStorage_830ec59e from 'nuxt_plugin_localStorage_830ec59e' // Source: ..\\plugins\\localStorage.js (mode: 'client')
 
@@ -211,16 +211,16 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_bootstrapvue_24b5757e === 'function') {
-    await nuxt_plugin_bootstrapvue_24b5757e(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_0bed855c === 'function') {
+    await nuxt_plugin_bootstrapvue_0bed855c(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_vuescrollto_b0f71692 === 'function') {
-    await nuxt_plugin_vuescrollto_b0f71692(app.context, inject)
+  if (process.client && typeof nuxt_plugin_vuescrollto_f1137588 === 'function') {
+    await nuxt_plugin_vuescrollto_f1137588(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_27e59912 === 'function') {
-    await nuxt_plugin_axios_27e59912(app.context, inject)
+  if (typeof nuxt_plugin_axios_75b1242d === 'function') {
+    await nuxt_plugin_axios_75b1242d(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_plugin_03b7832e === 'function') {

@@ -222,26 +222,31 @@ export default {
     },
     methods: {
         subscribe() {
-            axios.defaults.headers.common["Access-Control-Allow-Origin"] = "*";
-            axios.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
-            axios.defaults.headers.common["Access-Control-Allow-Headers"] = "Origin, Content-Type, X-Requested-With";
-            axios.defaults.headers.common["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS";
-            const headers = {
-                "Authorization": `Bearer ${process.env.VUE_APP_SEND_FOX_KEY}`,
-            };
-            const lists = [361222];
-            const formData = new FormData();
-            formData.set("email", this.email);
-            lists.forEach(function (value) {
-                formData.append("lists[]", value); // you have to add array symbol after the key name
-            });
-            axios.post("/api/contacts", formData, {
-                headers: headers
-            }).then((response) => {
-              this.openModal();    
-            })
-                .catch((error) => {
-            });
+          const lists = [376506];
+          const formData = new FormData();
+
+          axios.defaults.headers.common["Access-Control-Allow-Origin"] = "*";
+          axios.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+          axios.defaults.headers.common["Access-Control-Allow-Headers"] = "Origin, Content-Type, X-Requested-With";
+          axios.defaults.headers.common["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS";
+
+          const headers = {
+              "Authorization": `Bearer ${process.env.VUE_APP_SEND_FOX_KEY}`,
+          };
+
+          formData.set("email", this.email);
+
+          lists.forEach(function (value) {
+              formData.append("lists[]", value);
+          });
+
+          axios.post("/api/contacts", formData, {
+              headers: headers
+          }).then((response) => {
+            this.openModal();    
+          }).catch((error) => {
+            console.log(error);
+          });
         },
 
         openModal() {

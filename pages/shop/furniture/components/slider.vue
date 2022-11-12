@@ -1,6 +1,6 @@
 <template>
     <div>
-      <section class="p-0">
+      <!-- <section class="p-0">
       <div class="slide-1 home-slider">
         <div v-swiper:mySwiper="swiperOption">
           <div class="swiper-wrapper">
@@ -31,7 +31,7 @@
             <div class="swiper-button-next" slot="button-next"></div>
         </div>
       </div>
-    </section>
+    </section> -->
     </div>
 </template>
 
@@ -45,22 +45,22 @@ export default {
           prevEl: '.swiper-button-prev'
         }
       },
-      items: [
-        {
-          imagepath: require('@/assets/images/custom/banner/landing.jpg'),
-          title: '',
-          subtitle_top:'',
-          alignclass: 'p-left',
-          hasButton: false,
-        },
-        {
-          imagepath: require('@/assets/images/custom/banner/landing-2.jpeg'),
-          title: '',
-          subtitle: '',
-          alignclass: 'p-right',
-          hasButton: true,
-        }
-      ]
+      // items: [
+      //   {
+      //     imagepath: require('@/assets/images/custom/banner/landing.jpg'),
+      //     title: '',
+      //     subtitle_top:'',
+      //     alignclass: 'p-left',
+      //     hasButton: false,
+      //   },
+      //   {
+      //     imagepath: require('@/assets/images/custom/banner/landing-2.jpeg'),
+      //     title: '',
+      //     subtitle: '',
+      //     alignclass: 'p-right',
+      //     hasButton: true,
+      //   }
+      // ]
     }
   }
 }

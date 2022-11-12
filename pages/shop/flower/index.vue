@@ -1,25 +1,24 @@
 <template>
   <div>
     <Header />
-    <Slider />
     <CollectionBanner />
-    <TopProducts
+    <!-- <TopProducts
       :products="products"
       :category="category"
       @openQuickview="showQuickview"
       @openCompare="showCoampre"
       @openCart="showCart"
-    />
-    <Categorytab :products="products" :category="category" />
-    <ProductSlider
+    /> -->
+    <!-- <Categorytab :products="products" :category="category" /> -->
+    <!-- <ProductSlider
       :products="products"
       @openQuickview="showQuickview"
       @openCompare="showCoampre"
       @openCart="showCart"
-    />
-    <Blog />
-    <Services />
-    <Instagram />
+    /> -->
+    <!-- <Blog /> -->
+    <!-- <Services />
+    <Instagram /> -->
     <Footer />
     <quickviewModel
       :openModal="showquickviewmodel"

@@ -160,7 +160,7 @@ export default {
   },
   data() {
     return {
-      title: 'Fresh Flowers For your love',
+      title: 'Shop the Latest',
       showCart: false,
       showquickviewmodel: false,
       showcomapreModal: false,
@@ -227,3 +227,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.title-inner4{
+  text-transform: none !important;
+}
+</style>

@@ -16,7 +16,7 @@
             <li v-for="(item,index) in cart" :key="index">
               <div class="media">
                 <nuxt-link :to="{ path: '/product/'+item.slug}">
-                  <img alt class="mr-3" :src='getImgUrl(item.images[0].src)'>
+                  <img alt class="mr-3" :src='getImgUrl(item.images)'>
                 </nuxt-link>
                 <div class="media-body">
                   <nuxt-link :to="{ path: '/product/'+item.slug}">
@@ -82,7 +82,9 @@ export default {
   methods: {
     // Get Image Url
     getImgUrl(path) {
-      return require('@/assets/images/' + path)
+      if(path) {
+        return require('@/assets/images/' + path[0].src)
+      }
     },
     // Close cart model
     closeCart(val) {
